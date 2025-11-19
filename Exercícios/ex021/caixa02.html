@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        /* 
+        control + ; cria comentário 
+        */
+        /* oi */
+        body {
+            font-family: sans-serif;
+            background-color: dimgrey;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+
+        article {
+            background-color: lightgrey;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 7px 5px 7px 1px rgba(0, 0, 0, 0.63);
+            /* Coloque o box shadow no vsc, depois abra o devtools. Lá estará uma caixinha para editar as sombras! */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px
+        }
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            color: white;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <p>Vitória do Grêmio por 3x1 contra o Altético-MG</p>
+        <section id="noticias"></section>
+        <article>
+            <h2>Vitória fora de casa.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt modi praesentium, quo dolorem totam odio repellendus in exercitationem perferendis. Eveniet quae, molestias omnis id nam officiis voluptatibus adipisci amet doloremque?</p>
+        </article>
+        <aside>
+            <p>Artigo por Pedro</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolido por Pedro Oliveira.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
